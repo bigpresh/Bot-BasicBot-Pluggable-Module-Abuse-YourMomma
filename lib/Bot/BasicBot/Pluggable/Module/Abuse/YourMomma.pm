@@ -1,6 +1,10 @@
 package Bot::BasicBot::Pluggable::Module::Abuse::YourMomma;
 use strict;
 use base 'Bot::BasicBot::Pluggable::Module';
+use vars qw($VERSION);
+
+
+$VERSION = 0.01;
 
 =head1 NAME
 

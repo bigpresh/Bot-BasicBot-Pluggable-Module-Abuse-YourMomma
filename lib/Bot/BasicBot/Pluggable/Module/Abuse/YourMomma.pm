@@ -4,7 +4,7 @@ use base 'Bot::BasicBot::Pluggable::Module';
 use vars qw($VERSION);
 
 
-$VERSION = 0.01;
+$VERSION = 0.02;
 
 =head1 NAME
 
@@ -52,6 +52,17 @@ Why, it's Ross, of course.  *waves*
 
 David Precious C<< davidp@preshweb.co.uk >>
 
+
+=head1 LICENSE AND COPYRIGHT
+
+Copyright 2011 David Precious.
+
+This program is free software; you can redistribute it and/or modify it
+under the terms of either: the GNU General Public License as published
+by the Free Software Foundation; or the Artistic License.
+
+See http://dev.perl.org/licenses/ for more information.
+
 =cut
 
 sub said {
@@ -60,7 +71,7 @@ sub said {
 
     if ($mess->{body} =~ m{
         (is|it's) \s+
-        (dirty|smelly|filthy|nasty|horrible|minging)
+        (ugly|dirty|smelly|filthy|nasty|horrible|minging)
     }xmi) {
         return random_response(
             "So's your momma",
